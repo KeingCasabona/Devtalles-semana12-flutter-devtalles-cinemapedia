@@ -15,7 +15,7 @@ class MovieMapper {
         popularity: moviedb.popularity,
         posterPath: (moviedb.posterPath != '')
             ? 'https://image.tmdb.org/t/p/w500${moviedb.posterPath}'
-            : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.es%2Ficono-gratis%2Fequivocado_13371751&psig=AOvVaw2eSSUdZZuDQyAelC4nQdZd&ust=1746050481183000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJDLqZqf_owDFQAAAAAdAAAAABAI',
+            : 'no_poster',
         releaseDate: moviedb.releaseDate,
         title: moviedb.title,
         video: moviedb.video,
