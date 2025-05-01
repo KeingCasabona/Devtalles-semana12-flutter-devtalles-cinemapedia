@@ -44,7 +44,7 @@ class _HomeViewState extends ConsumerState<_HomeView> {
       children: [
         CustomAppbar(),
         MoviesSlideshow(
-          movies: [],
+          movies: nowPlayingMovies,
         )
       ],
     );
