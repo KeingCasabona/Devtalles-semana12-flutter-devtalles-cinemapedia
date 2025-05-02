@@ -11,7 +11,8 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: const _HomeView(),
+      body: _HomeView(),
+      bottomNavigationBar: CustomBottomNavigationbar(),
     );
   }
 }
@@ -42,7 +43,7 @@ class _HomeViewState extends ConsumerState<_HomeView> {
         CustomAppbar(),
         MoviesSlideshow(
           movies: slideShowMovies,
-        )
+        ),
       ],
     );
   }
