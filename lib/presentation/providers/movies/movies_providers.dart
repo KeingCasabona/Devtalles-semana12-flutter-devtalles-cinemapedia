@@ -10,6 +10,13 @@ final nowPlayingMoviesProvider =
     fetchMoreMovies: fetchMoreMovies,
   );
 });
+final popularMoviesProvider =
+    StateNotifierProvider<MovieNotifier, List<MovieModel>>((ref) {
+  final fetchMoreMovies = ref.watch(movieRepositoryProvider).getPopularMovies;
+  return MovieNotifier(
+    fetchMoreMovies: fetchMoreMovies,
+  );
+});
 
 typedef MovieCallback = Future<List<MovieModel>> Function({int page});
 
